@@ -1,0 +1,79 @@
+body {
+  background-color: #004080;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
+  font-size: 11px;
+  color: #999;
+}
+
+.box {
+  display: block;
+  color: #666;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #ccd6dd;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#contact {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#timeline {
+  position: absolute;
+  left: -999px;
+  height: 1px;
+  width: 1px;
+}
+
+#tweets {
+  flex-direction: column;
+}
+
+#tweets-loading {
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+
+a, a:visited { 
+  color: #666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #004080;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #004080;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: #004080;
+}
