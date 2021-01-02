@@ -1,15 +1,16 @@
 body {
   background-color: #004080;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;;
 }
 
-main {
-  width: 100%;
+#container {
   max-width: 500px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+main {
   padding: 10px;
 }
 
@@ -30,8 +31,8 @@ footer {
   margin-top: 10px;
 }
 
-#contact {
-  margin-top: 10px;
+#social {
+  margin-top: 20px;
   text-align: center;
   font-weight: bold;
   font-size: 14px;
@@ -49,9 +50,9 @@ footer {
 }
 
 #tweets-loading {
-  height: 300px;
+  /* height: 300px; */
   text-align: center;
-  line-height: 300px;
+  /* line-height: 300px; */
 }
 
 a, a:visited { 
@@ -67,13 +68,13 @@ a:hover, a:focus {
 h1 {
   font-size: 32px;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 5px;
   color: #004080;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
   color: #004080;
 }
