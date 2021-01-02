@@ -20,6 +20,8 @@ const limit = 6;
 const screenName = 'evansobkowicz';
 const includeRTs = false;
 
+const logTweetStatus = (success) => ga && ga('send', 'event', 'Tweets', success ? 'success' : 'failure');
+
 const isTimelineEvent = ({ title }) => title === 'Twitter Timeline';
 const isOriginalTweet = ({ dataset: { renderedTweetId, tweetId } }) => renderedTweetId === tweetId;
 
@@ -35,6 +37,9 @@ twttr.ready(twttr => {
       TweetsLoadingElement.remove();
       MetaElement.style = '';
       MainElement.appendChild(MetaElement);
+      logTweetStatus(true);
+    }).catch(() => {
+      logTweetStatus(false);
     });
   });
 });
