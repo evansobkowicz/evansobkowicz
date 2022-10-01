@@ -38,23 +38,6 @@ footer {
   font-size: 14px;
 }
 
-#timeline {
-  position: absolute;
-  left: -999px;
-  height: 1px;
-  width: 1px;
-}
-
-#tweets {
-  flex-direction: column;
-}
-
-#tweets-loading {
-  /* height: 300px; */
-  text-align: center;
-  /* line-height: 300px; */
-}
-
 a, a:visited { 
   color: #666;
   font-weight: bold;
